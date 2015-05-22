@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	#header
+		h1= title
+		p Welcome to #{title}
+		p= intro
+
+	#content
+		h2= subtitle1
+		div
+			table.table
+				thead
+					th Url
+					th Description
+					th Date Created
+				tbody
+					tr
+					each elem in list
+						td
+							a(href=elem.url)= elem.url
+						td= elem.description
+						td= elem.date_created
+
+	#footer
+		p Ming Kai Chen

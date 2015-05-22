@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 	var projects = [
 	{
-		url: "http://tinyurl.com/allegro-mkc",
+		url: "https://allegro-music-store.herokuapp.com",
 		description: "A simple single-page Point of Sales web-application using MEAN",
 		date_created: new Date(2015, 5, 10)
 	}];

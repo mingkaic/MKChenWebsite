@@ -8,6 +8,11 @@ router.get('/', function(req, res, next) {
 		url: "https://allegro-music-store.herokuapp.com",
 		description: "A simple single-page Point of Sales web-application using MEAN",
 		date_created: new Date(2015, 5, 10)
+	},
+	{
+		url: "https://flash-gallery.herokuapp.com",
+		description: "An image gallery web-application using MEAN",
+		date_created: new Date(2015, 5, 22)
 	}];
 
 	var vm = {

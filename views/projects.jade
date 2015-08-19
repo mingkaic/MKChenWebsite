@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	.panel.panel-default
+		.panel-heading
+			h2=subtitle
+		.panel-body
+			table.table
+				thead
+					th Url
+					th Description
+				tbody
+					each elem in list
+						tr
+							td
+								a(href=elem.url)= elem.url
+							td= elem.description

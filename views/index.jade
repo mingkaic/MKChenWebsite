@@ -1,26 +1,6 @@
 extends layout
 
 block content
-	#header
-		h1= title
-		p Welcome to #{title}
-		p= intro
-
-	#content
-		h2= subtitle1
-		div
-			table.table
-				thead
-					th Url
-					th Description
-					th Date Created
-				tbody
-					each elem in list
-						tr
-							td
-								a(href=elem.url)= elem.url
-							td= elem.description
-							td= elem.date_created
-
-	#footer
-		p Ming Kai Chen
+	.layout1.vertPager
+		a(id='introProj', href='/projects')
+			.intro
